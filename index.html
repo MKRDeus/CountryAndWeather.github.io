@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Atlas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="container">
+        <div id="atlas-container">
+            <div id="atlas-title-container">
+                <h1 id="atlas-title">Buscador Atlas</h1>
+            </div>
+            <div id="gif-container">
+                <img id="earth-gif" src="gifs/Earth-spinning-no-background.gif" alt="">
+            </div>
+        </div>
+        <div id="search-country-container">
+            <div id="container-one">
+                <div id="title-container">
+                    <h1 id="title">Busca un Pais</h1>
+                </div>
+                <div id="button-searcher-container" class="show">
+                    <button id="search-btn">Empezar</button>
+                </div>
+            </div>
+            <div id="container-two" class="hide">
+                <form id="searcher-form">
+                    <div id="input-container">
+                        <input type="text" id="searcher-input">
+                        <button id="back-btn">Regresar</button>
+                    </div>
+                </form>
+                <div id="recomendation-container">
+                    <div id="caracteritics" class="coutry-recomendation hide">
+                        <img id="flag" src="" alt="">
+                        <p>Nombre: <span id="name"></span> </p>
+                        <p>Capital: <span id="capital"></span> </p>
+                        <p>Habitantes: <span id="population"></span> </p>
+                        <p>Region: <span id="region"></span> </p>
+                        <p>Temperatura: <span id="temperature"></span> </p>
+                        <p>Clima Actual: <span id="weather"></span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="button-search-back.js"></script>
+    <script src="search-country.js"></script>
+</body>
+
+</html>

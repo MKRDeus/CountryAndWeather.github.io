@@ -1,0 +1,170 @@
+body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*name app and earth gif*/
+#atlas-container {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#atlas-title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#earth-gif {
+    height: 250px;
+    width: 250px;
+}
+
+#search-country-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searcher-form {
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    /*800*/
+    border: 5px solid #000;
+}
+
+#container-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+#title {
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#button-searcher-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+#search-btn {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 10%;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s all;
+}
+
+#search-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#container-two {
+    width: 100%;
+}
+
+#input-container {
+    display: flex;
+    gap: 40px;
+}
+
+#searcher-input {
+    width: 75%;
+    height: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+#back-btn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 25%;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#back-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s all;
+}
+
+/*Container of recomendation*/
+#recomendation-container {
+    width: 100%;
+    height: 350px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    /*700*/
+    border: 5px solid #000;
+}
+
+/*hide and show class*/
+.hide {
+    display: none;
+    transition: 1s all;
+}
+
+.show {
+    display: block;
+    transition: 1s all;
+}
+
+.wrong {
+    border: 5px solid #ff0000;
+}
+
+.right {
+    border: 5px solid #008000;
+}
+
+@media (max-width: 680px) {
+    body {
+        height: 100%;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+}
